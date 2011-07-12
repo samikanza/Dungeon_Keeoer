@@ -1,0 +1,29 @@
+<h1>Listing ultra_evil_witches</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Magic type</th>
+    <th>Experience points</th>
+    <th>Spell power</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ultra_evil_witches.each do |ultra_evil_witch| %>
+  <tr>
+    <td><%= ultra_evil_witch.name %></td>
+    <td><%= ultra_evil_witch.magic_type %></td>
+    <td><%= ultra_evil_witch.experience_points %></td>
+    <td><%= ultra_evil_witch.spell_power %></td>
+    <td><%= link_to 'Show', ultra_evil_witch %></td>
+    <td><%= link_to 'Edit', edit_ultra_evil_witch_path(ultra_evil_witch) %></td>
+    <td><%= link_to 'Destroy', ultra_evil_witch, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ultra evil witch', new_ultra_evil_witch_path %>

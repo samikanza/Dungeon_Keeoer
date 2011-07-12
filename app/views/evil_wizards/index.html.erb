@@ -1,0 +1,27 @@
+<h1>Listing evil_wizards</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Magic type</th>
+    <th>Experience ppints</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @evil_wizards.each do |evil_wizard| %>
+  <tr>
+    <td><%= evil_wizard.name %></td>
+    <td><%= evil_wizard.magic_type %></td>
+    <td><%= evil_wizard.experience_ppints %></td>
+    <td><%= link_to 'Show', evil_wizard %></td>
+    <td><%= link_to 'Edit', edit_evil_wizard_path(evil_wizard) %></td>
+    <td><%= link_to 'Destroy', evil_wizard, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Evil wizard', new_evil_wizard_path %>

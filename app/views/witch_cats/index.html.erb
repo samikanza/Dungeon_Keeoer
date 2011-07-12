@@ -1,0 +1,27 @@
+<h1>Listing witch_cats</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Color</th>
+    <th>Power level</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @witch_cats.each do |witch_cat| %>
+  <tr>
+    <td><%= witch_cat.name %></td>
+    <td><%= witch_cat.color %></td>
+    <td><%= witch_cat.power_level %></td>
+    <td><%= link_to 'Show', witch_cat %></td>
+    <td><%= link_to 'Edit', edit_witch_cat_path(witch_cat) %></td>
+    <td><%= link_to 'Destroy', witch_cat, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Witch cat', new_witch_cat_path %>

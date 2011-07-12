@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @evil_wizard.name %>
+</p>
+
+<p>
+  <b>Magic type:</b>
+  <%= @evil_wizard.magic_type %>
+</p>
+
+<p>
+  <b>Experience ppints:</b>
+  <%= @evil_wizard.experience_ppints %>
+</p>
+
+
+<%= link_to 'Edit', edit_evil_wizard_path(@evil_wizard) %> |
+<%= link_to 'Back', evil_wizards_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: 
+  color: 
+  power_level: 1
+
+two:
+  name: 
+  color: 
+  power_level: 1

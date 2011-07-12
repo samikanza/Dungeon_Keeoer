@@ -1,0 +1,33 @@
+<%= form_for(@ultra_evil_witch) do |f| %>
+  <% if @ultra_evil_witch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ultra_evil_witch.errors.count, "error") %> prohibited this ultra_evil_witch from being saved:</h2>
+
+      <ul>
+      <% @ultra_evil_witch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :magic_type %><br />
+    <%= f.text_field :magic_type %>
+  </div>
+  <div class="field">
+    <%= f.label :experience_points %><br />
+    <%= f.text_field :experience_points %>
+  </div>
+  <div class="field">
+    <%= f.label :spell_power %><br />
+    <%= f.text_field :spell_power %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @ultra_evil_witch.name %>
+</p>
+
+<p>
+  <b>Magic type:</b>
+  <%= @ultra_evil_witch.magic_type %>
+</p>
+
+<p>
+  <b>Experience points:</b>
+  <%= @ultra_evil_witch.experience_points %>
+</p>
+
+<p>
+  <b>Spell power:</b>
+  <%= @ultra_evil_witch.spell_power %>
+</p>
+
+
+<%= link_to 'Edit', edit_ultra_evil_witch_path(@ultra_evil_witch) %> |
+<%= link_to 'Back', ultra_evil_witches_path %>

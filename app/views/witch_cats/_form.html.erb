@@ -1,0 +1,29 @@
+<%= form_for(@witch_cat) do |f| %>
+  <% if @witch_cat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@witch_cat.errors.count, "error") %> prohibited this witch_cat from being saved:</h2>
+
+      <ul>
+      <% @witch_cat.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :color %><br />
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :power_level %><br />
+    <%= f.text_field :power_level %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

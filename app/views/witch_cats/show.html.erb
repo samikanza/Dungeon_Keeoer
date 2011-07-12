@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @witch_cat.name %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @witch_cat.color %>
+</p>
+
+<p>
+  <b>Power level:</b>
+  <%= @witch_cat.power_level %>
+</p>
+
+
+<%= link_to 'Edit', edit_witch_cat_path(@witch_cat) %> |
+<%= link_to 'Back', witch_cats_path %>

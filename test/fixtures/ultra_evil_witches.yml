@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: 
+  magic_type: 
+  experience_points: 
+  spell_power: 1
+
+two:
+  name: 
+  magic_type: 
+  experience_points: 
+  spell_power: 1
